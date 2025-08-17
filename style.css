@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #2a4a28;
+    --cor-fundo: #010000;
+    --cor-button: #14ae5c;
+    --cta-hover: #02542D;
+    --cor-texto: #fff;
+    --fonte-principal:'Roboto';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    padding-top: 75px;
+    width: 100%;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul a {
+    font-size: 15px;
+}
+
+.btn-agende {
+    background-color: var(--cor-button);
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-agende:hover {
+    background-color: var(--cta-hover);
+}
+
+.hero {
+    width: 100%;
+    height: 730px;
+    text-align: center;
+    padding: 100px 20px 60px;
+    background-image: url('img/drone.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 78px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn-demo {
+    background-color: var(--cor-button);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-demo:hover {
+    background-color: var(--cta-hover);
+}
+
+.video-preview {
+    margin: 40px auto;
+    max-width: 720px;
+    height: 400px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.video-drone {
+    margin: 40px auto;
+    width: 100%;
+    height: 400px;
+    background-size: 1350px;
+    background-position: center;
+}
+
+.beneficios {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.beneficios h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.demo-texto {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.assista button{
+    font-size: 15px;
+    margin-top: 15px;
+    height: 35px;
+    width: 135px;
+    gap: 100px;
+    padding-top: 10px;
+    background-color: var(--cor-button);
+    border-radius: 8px;
+    font-family: var(--fonte-principal);
+}
+
+.assista button:hover {
+    cursor: pointer;
+}
+
+.funcoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #111;
+}
+
+.funcoes .box {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.depoimentos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url('img/floresta.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.recomendacao h2 {
+    padding-top: 35px;
+}
+
+.recomendacao p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.fazenda p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 35px;
+}
+
+.pessoa img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--cor-fundo);
+    flex-wrap: wrap;
+}
+
+.texto-contato {
+    max-width: 400px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.formulario input, .formulario button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.formulario button {
+    background-color: var(--cor-button);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: var(--cta-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+    .hero h2 {
+        font-size: 28px;
+    }
+    .icones {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .btn-agende {
+        align-self: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .video-drone {
+        height: auto;
+    }
+
+    .depoimentos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .pessoa img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contato {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .texto-contato, .formulario {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .icones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .funcoes {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .recomendacao p, .fazenda p {
+        font-size: 16px;
+    }
+
+    .formulario input, .formulario button {
+        font-size: 0.9rem;
+    }
+}
